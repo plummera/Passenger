@@ -1,0 +1,30 @@
+#logo.subhome {
+    background: url("../../../../img/header_logo.png") repeat scroll 0 0 transparent !important;
+}
+
+#menu.subhome > ul > li > a, #menu.subhome .l2.active > li > a , #menu.subhome .l4 a {
+    color: #BAAEAF !important;
+}
+
+html.csstransitions #menu.subhome .l2.active > li:hover > a{
+	color: #e2d3d4 !important;
+}
+
+#menu.subhome .informative {
+	color: #BAAEAF !important;
+}
+
+
+#menu.subhome{
+    background: url("../../../../img/b_g.png") repeat scroll 0 0 transparent;
+    height: 100%;
+    left: 20px;
+    min-height: 550px;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+ 
+#menu.subhome .l2 .activeSection {
+    color: #BAAEAF !important;
+}

@@ -1,0 +1,140 @@
+{% extends 'base.html.twig' %}
+
+{% block javascripts %}
+  {% javascripts '@jquery_js' '@bootstrap_js' filter='?yui_js' combine=true %}
+     <script src="{{ asset_url }}"></script>
+  {% endjavascripts %}
+{% endblock %}
+
+{% block stylesheets %}
+  {% stylesheets '@bootstrap_less' '@monticristi_less' combine=true %}
+    <link href="{{ asset_url }}" type="text/css" rel="stylesheet" />
+ {% endstylesheets %}
+{% endblock %}
+
+{% block body %}
+
+<!-- Header information for active test page -->
+<div class="row">
+  <div class="container">
+    <div class="col-md">
+      <h2>Active Test Page</h2>
+    </div>
+  </div>
+</div>
+
+<h1>NEW</h1>
+
+<!-- Meat & Potatoes -->
+
+<div id="grayDiv" class="col-md">
+  <div class="container-fluid">
+    <div class="divLogo">
+      <img src="/Passenger/web/images/header_logo.png" href="https://www.monticristi.com">
+    </div>
+
+    <div id="craftsmanshipTimeline">
+      <div id="missionStatement">
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A Monticristi® has a production timeline that could surpass ten months, starting from the buds harvest until it is placed in the final package. Our unique team of craftsmen goes through several processes and delicate steps until it has reached the finished product. The vegetable fiber needs to be pealed, cooked, and dried in the shade before the craftsmen start the art of weaving.
+        </p>
+      </div>
+      <div class="col-md-8">
+        <h4>The weaving process of the hat skirt</h4>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In the weaving process of the hat skirt we can observe that the artisan is in a unique position to be able to shake the straw and give it a better finish. This is the most suited position for this step and its duration depends on the skills of the weaver who performs the art. This process can last up to 9 months depending on how fine the weave is.
+        </p>
+      </div>
+      <div class="col-md-4">
+        <img class="img-responsive" alt="Step 1" data-entity-type="file" data-entity-uuid="08bb64f0-421a-4806-b900-eddb77dee6fd" src="/Passenger/web/images/craftsmanship/pic-craftsmanship-step01.png" />
+      </div>
+      <div class="col-md-8">
+        <h4>Hat Batter</h4>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The hat batters give the straw a better and more strength. This is a very delicate process where the artisan doing it has to be careful to not break the straw. This process takes around 15 to 30 minutes depending on the hat style.
+        </p>
+      </div>
+      <div class="col-md-4">
+        <img class="img-responsive" alt="Step 2" data-entity-type="file" data-entity-uuid="08bb64f0-421a-4806-b900-eddb77dee6fd" src="/Passenger/web/images/craftsmanship/pic-craftsmanship-step02.png" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- END OF Meat & Potatoes -->
+
+<div id="next">
+  <h1>OLD</h1>
+  <h2>What's next?</h2>
+  <h3>Mock-up of Craftsmanship Steps</h3>
+    <table border="5" cellpadding="10" cellspacing="15" style="background:#333; opacity:0.9;">
+	  <tbody>
+		<tr>
+			<td colspan="2">
+			<table style="background:#3o3o3o">
+				<tbody>
+					<tr>
+						<td style="border-right:hidden; padding-left:160px; padding-top:10px" width="70%"><a href="https://www.monticristi.com/home.html"><img alt="Monticristi® 2015" data-entity-type="file" data-entity-uuid="e920a41f-bf11-4cf1-9900-c699e9cff801" src="/Passenger/web/images/header_logo2.png" /></a></td>
+						<td style="padding-right:15px; padding-top:10px" width="30%">&nbsp;</td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+			  <p><font size="-1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A Monticristi® has a production timeline that could surpass ten months, starting from the buds harvest until it is placed in the final package. Our unique team of craftsmen goes through several processes and delicate steps until it has reached the finished product. The vegetable fiber needs to be pealed, cooked, and dried in the shade before the craftsmen start the art of weaving.</font></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 619px;">
+			  <h4><b><i><u>The weaving process of the hat skirt</u></i></b></h4>
+			  <font size="-1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In the weaving process of the hat skirt we can observe that the artisan is in a unique position to be able to shake the straw and give it a better finish. This is the most suited position for this step and its duration depends on the skills of the weaver who performs the art. This process can last up to 9 months depending on how fine the weave is.</font></td>
+			<td style="width: 19px;">
+			<p><img alt="Step 1" data-entity-type="file" data-entity-uuid="08bb64f0-421a-4806-b900-eddb77dee6fd" src="/Passenger/web/images/craftsmanship/pic-craftsmanship-step01.png" /></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 619px;">
+			<h4><b><i><u>Hat batter</u></i></b></h4>
+			<font size="-1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The hat batters give the straw a better and more strength. This is a very delicate process where the artisan doing it has to be careful to not break the straw. This process takes around 15 to 30 minutes depending on the hat style.</font></td>
+			<td style="width: 19px;">
+			<p><img alt="Step 2" data-entity-type="file" data-entity-uuid="0d040848-ff1d-4cef-8700-e799d886a623" src="/Passenger/web/images/craftsmanship/pic-craftsmanship-step02.png" /></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 619px;">
+			<h4><b><i><u>Mussing the hat</u></i></b></h4>
+			<font size="-1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This process is called muss the hat and it is performed with a shackle to cut the straws that are in all its surroundings to perfect the weave. This process can take hours.</font></td>
+			<td style="width: 19px;"><img alt="Step 3" data-entity-type="file" data-entity-uuid="f7bbdc4e-da67-48fa-9e36-54b563921f79" src="/Passenger/web/images/craftsmanship/pic-craftsmanship-step03.png" /></td>
+		</tr>
+		<tr>
+			<td style="width: 619px;">
+			<h4><b><i><u>Fuzzing the hat</u></i></b></h4>
+			<font size="-1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This process is when the hat is about to end. Artisans fine-tune the hat to see if it has fuzz around the hat crown that needs to be cut. This process can take up to 30 minutes.</font></td>
+			<td style="width: 19px;"><img alt="Step 4" data-entity-type="file" data-entity-uuid="5d76579a-5dbb-4668-960d-13e093d3a95a" src="/Passenger/web/images/craftsmanship/pic-craftsmanship-step04.png" /></td>
+		</tr>
+		<tr>
+			<td style="width: 619px;">
+			<h4><b><i><u>Ironing the hat</u></i></b></h4>
+			<font size="-1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In this image we can see how the hat begins to be ironed to have the desired shape and more endurance.</font></td>
+			<td style="width: 19px;"><img alt="Step 5" data-entity-type="file" data-entity-uuid="40c10fe8-fc2c-44a5-ae00-cd2a050c3514" src="/Passenger/web/images/craftsmanship/pic-craftsmanship-step05.png" /></td>
+		</tr>
+		<tr>
+			<td style="width: 619px;">
+			<h4><b><i><u>After Ironing the hat</u></i></b></h4>
+			<font size="-1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; After ironing the hat we place it in the sun for around 2 hours and if there is no sun we place the hat for 6-7 hours in the mold.</font></td>
+			<td style="width: 19px;"><img alt="Step 6" data-entity-type="file" data-entity-uuid="0966bbaa-6acc-461a-b000-f9d2df0baae2" src="/Passenger/web/images/craftsmanship/pic-craftsmanship-step06.png" /></td>
+		</tr>
+		<tr>
+			<td colspan="2">&nbsp;</td>
+		</tr>
+		<tr>
+			<td colspan="2" style="background:#000; opacity:0.4"><font size="-2" style="margin-left:20px"><u>Monticristi®</u> is a Registered Trademark of Monticristi L.L.C. 2013-2014 All rights reserved.</font> &nbsp;&nbsp;&nbsp; <img height="33" src="images/header_logo.png" width="100" /></td>
+		</tr>
+		<tr>
+			<td colspan="2">&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+
+    </div>
+  </div>
+{% endblock %}
