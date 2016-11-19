@@ -1,6 +1,6 @@
 <?php
 
-namespace MonticristiBundle\Controller;
+namespace PassengerBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
@@ -12,14 +12,14 @@ class DefaultController extends Controller
      * @Route("/hello/{name}")
      * @Template()
      */
-    public function hiNameAction($name)
+    public function nameAction($name)
     {
         return array('name' => $name);
     }
 
     /**
      * @Route("/{page}", name="static")
-     * @Template("@MonticristiBundle::default/index.html")
+     * @Template("@PassengerBundle::default/index.html")
      */
     public function indexAction($page) {
         return array('page' => $page);

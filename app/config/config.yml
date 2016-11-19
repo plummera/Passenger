@@ -101,7 +101,7 @@ assetic:
             - '%kernel.root_dir%/../vendor/twitter/bootstrap/less/bootstrap.less'
         filters: [lessphp,cssembed]
 
-    monticristi_less:
+    passenger_less:
         inputs:
-            - '%kernel.root_dir%/Resources/public/scss/css/monticristi.less'
+            - '%kernel.root_dir%/Resources/public/scss/css/passenger.less'
         filters: [lessphp,cssembed]

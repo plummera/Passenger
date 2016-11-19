@@ -1,6 +1,6 @@
 <?php
 
-namespace MonticristiBundle\Tests\Controller;
+namespace PassengerBundle\Tests\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 

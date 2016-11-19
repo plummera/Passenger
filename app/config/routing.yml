@@ -1,5 +1,5 @@
-monticristi:
-    resource: "@MonticristiBundle/Controller/"
+passenger:
+    resource: "@PassengerBundle/Controller/"
     type:     annotation
     prefix:   /
 

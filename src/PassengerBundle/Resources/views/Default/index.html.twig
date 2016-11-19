@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+
+{% block javascripts %}
+  {% javascripts '@jquery_js' '@bootstrap_js' filter='?yui_js' combine=true %}
+     <script src="{{ asset_url }}"></script>
+  {% endjavascripts %}
+{% endblock %}
+
+{% block stylesheets %}
+  {% stylesheets '@bootstrap_less' '@passenger_less' combine=true %}
+    <link href="{{ asset_url }}" type="text/css" rel="stylesheet" />
+ {% endstylesheets %}
+{% endblock %}
+
+{% block body %}
+
+<!-- Header information for active test page -->
+<div class="row">
+  <div class="container">
+    <div class="col-md">
+      <h2>Active Test Page</h2>
+    </div>
+  </div>
+</div>
+
+<h1>NEW</h1>
+
+<!-- Meat & Potatoes -->
+
+<h2>What it do cuh?</h2>
+
+<!-- END OF Meat & Potatoes -->
+
+<h3>Sup though</h3>
+{% endblock %}
