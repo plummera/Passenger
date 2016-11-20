@@ -15,18 +15,19 @@ class DefaultController extends Controller
      */
     public function nameAction($name)
     {
-        return array('name' => $name);
+      $ip = $this->getIpAddress();
+      return array('name' => $name);
+      return array('ip' => $ip);
     }
 
     /**
-     * @Route("/{page}", name="static")
+     * @Route("/", name="static")
      * @Template()
      */
-    public function indexAction($page) {;
+    public function indexAction() {;
         $ip = $this->getIpAddress();
 
         return array('ip' => $ip);
-        return array('page' => $page);
     }
 
     public function getIpAddress() {
