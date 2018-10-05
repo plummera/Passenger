@@ -16,8 +16,12 @@ class DefaultController extends Controller
     public function nameAction($name)
     {
       $ip = $this->getIpAddress();
-      return array('name' => $name);
-      return array('ip' => $ip);
+      $visitorname = $this->getName();
+
+      return array('name' => $name,
+                   'ip' => $ip,
+                   'visitorname' => $visitorname
+                  );
     }
 
     /**
@@ -49,5 +53,18 @@ class DefaultController extends Controller
           $ipaddress = 'UNKNOWN';
       return $ipaddress;
         return array('ip' => $ipaddress);
+    }
+
+    public function getName() {
+      // Try to get the name (not sure but okay)
+      $visitorname = '';
+      if (isset($_SERVER['LOGNAME']))
+        $visitorname = $_SERVER['LOGNAME'];
+      else if(isset($_SERVER['USER']))
+        $visitorname = $_SERVER['USER'];
+      else
+        $ipaddress = 'Guest';
+      return $visitorname;
+        return array('visitorname' => $visitorname);
     }
 }
