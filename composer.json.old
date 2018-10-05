@@ -12,6 +12,7 @@
         "symfony/symfony": "2.7.*",
         "doctrine/orm": "^2.4.8",
         "doctrine/doctrine-bundle": "~1.4",
+        "symfony/assetic-bundle": "^2.7",
         "symfony/swiftmailer-bundle": "~2.3",
         "symfony/monolog-bundle": "~2.4",
         "sensio/distribution-bundle": "~4.0",
@@ -20,6 +21,8 @@
         "symfony/assetic-bundle": "^2.7",
         "oyejorge/less.php": "~1.7.0.9",
         "twitter/bootstrap": "^3.3",
+        "phpclasses/assets": "*",
+        "jquery/jquery": "^1.7",
         "stolz/assets": "^0.1.4",
         "components/jquery": "^2.1",
         "friendsofsymfony/user-bundle": "^1.3"
