@@ -77,6 +77,11 @@ assetic:
             - '%kernel.root_dir%/../vendor/twitter/bootstrap/js/carousel.js'
             - '%kernel.root_dir%/../vendor/twitter/bootstrap/js/affix.js'
         filters: [?yui_js]
+    passenger_js:
+        inputs:
+          - '%kernel.root_dir%/Resources/public/js/vendor/app.js'
+          - '%kernel.root_dir%/Resources/public/js/vendor/banksy.js'
+        filters: [?yui_js]
     bootstrap_less:
         inputs:
             - '%kernel.root_dir%/../vendor/twitter/bootstrap/less/bootstrap.less'

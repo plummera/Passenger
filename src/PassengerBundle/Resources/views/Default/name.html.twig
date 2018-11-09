@@ -19,7 +19,7 @@
   <div class="container">
     <div class="col-md-8">
       <h1>Hello {{ visitorname | capitalize }}</h1>
-      <p>Welcome to the dojo. First things first. Let's get you out of those filthy clothes and set you up in something proper.</p>
+      <p>Welcome to the dojo. First things first. Let's get you out of those unsanitized datasets and set you up in something proper.</p>
 
       <p>To right you will notice a  table with data populated in it. Don't worry about the values just yet. They are not representative of anything at this time. They provide spatial recommendations and examples to build from.</p>
 
@@ -45,6 +45,12 @@
         </tr>
 
       </table>
+    </div>
+
+    <div class="col-md-12">
+      <div id="chart"></div>
+
+      <script src="http://d3js.org/d3.v3.min.js"></script>
     </div>
 
     <div class="col-md-12">
