@@ -1,11 +1,5 @@
 {% extends 'base.html.twig' %}
 
-{% block javascripts %}
-  {% javascripts '@jquery_js' '@bootstrap_js' filter='?yui_js' combine=true %}
-     <script src="{{ asset_url }}"></script>
-  {% endjavascripts %}
-{% endblock %}
-
 {% block stylesheets %}
   {% stylesheets '@bootstrap_less' '@passenger_less' combine=true %}
     <link href="{{ asset_url }}" type="text/css" rel="stylesheet" />
@@ -50,7 +44,6 @@
     <div class="col-md-12">
       <div id="chart"></div>
 
-      <script src="http://d3js.org/d3.v3.min.js"></script>
     </div>
 
     <div class="col-md-12">
@@ -59,5 +52,14 @@
   </div>
 </div>
 
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="https://cdn.rawgit.com/Neilos/bihisankey/master/bihisankey.js"></script>
 
+{% endblock %}
+
+
+{% block javascripts %}
+  {% javascripts '@jquery_js' '@bootstrap_js' '@passenger_js' filter='?yui_js' combine=true %}
+     <script src="{{ asset_url }}"></script>
+  {% endjavascripts %}
 {% endblock %}

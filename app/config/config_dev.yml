@@ -79,8 +79,7 @@ assetic:
         filters: [?yui_js]
     passenger_js:
         inputs:
-          - '%kernel.root_dir%/Resources/public/js/vendor/app.js'
-          - '%kernel.root_dir%/Resources/public/js/vendor/banksy.js'
+            - '%kernel.root_dir%/Resources/public/js/vendor/app.js'
         filters: [?yui_js]
     bootstrap_less:
         inputs:

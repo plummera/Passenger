@@ -4,15 +4,10 @@
         <meta charset="UTF-8" />
         <title>{% block title %}Welcome Passenger!{% endblock %}</title>
         {% block stylesheets %}{% endblock %}
+        {% block javascripts %}{% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
-
-        <script src="http://d3js.org/d3.v3.min.js"></script>
-        <script src="https://cdn.rawgit.com/Neilos/bihisankey/master/bihisankey.js"></script>
     </head>
     <body>
         {% block body %}{% endblock %}
     </body>
-
-    {% block javascripts %}{% endblock %}
-
 </html>
