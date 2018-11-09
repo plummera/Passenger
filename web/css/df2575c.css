@@ -6746,6 +6746,20 @@ body {
   font-size: 0.8em;
   font-family: sans-serif;
 }
+#greeting {
+  background: aliceblue;
+  border-radius: 25px;
+  color: green;
+  border: 4.7px double gold;
+  margin: 2rem;
+  padding: 2rem;
+  text-align: center;
+}
+#relationshipChart {
+  background: #66f7b375;
+  border: 1px solid black;
+  border-radius: 25px;
+}
 #tooltip {
   position: absolute;
   font-size: 0.7em;
